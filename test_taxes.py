@@ -1,12 +1,12 @@
 # Code contains four problems.
 STATE_TAX_RATE = .051
-COUNTY_TAX_RATE = .024 #County tax rate was wrong
+COUNTY_TAX_RATE = .025
 
 def main():
     print('This program will calculate your taxes!\n')
 
     sale = float(input('How much is the cost of your purchase? '))
-    state_tax = calculate_state_tax(sale, STATE_TAX_RATE)#state_tax not defined
+    calculate_state_tax(sale, STATE_TAX_RATE)
     county_tax = calculate_county_tax(COUNTY_TAX_RATE, sale)
     total_cost = sale + state_tax + county_tax
 
@@ -19,6 +19,6 @@ def calculate_state_tax(sales_amount, tax_rate):
 	return(sales_amount * tax_rate)
 	
 def calculate_county_tax(amount, rate):
-	return(amount * rate) #There was no return #taxes(unused and uneeded variable)
+	taxes = amount * rate
 
 main()
