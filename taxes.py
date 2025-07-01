@@ -7,7 +7,7 @@ def main():
 
     sale = float(input('How much is the cost of your purchase? '))
     state_tax = calculate_state_tax(sale, STATE_TAX_RATE)#state_tax not defined
-    county_tax = calculate_county_tax(COUNTY_TAX_RATE, sale)
+    county_tax = calculate_county_tax(sale, COUNTY_TAX_RATE)#Sale and Tax_Rate needed swapped
     total_cost = sale + state_tax + county_tax
 
     print('\nSale amount: $', format(sale, '.2f'), sep = '')
