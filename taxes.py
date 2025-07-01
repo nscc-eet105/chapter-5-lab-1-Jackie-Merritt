@@ -1,3 +1,4 @@
+#Jackie_Merritt-Chp5-Lab1-6/26/2025
 # Code contains four problems.
 STATE_TAX_RATE = .051
 COUNTY_TAX_RATE = .024 #County tax rate was wrong
